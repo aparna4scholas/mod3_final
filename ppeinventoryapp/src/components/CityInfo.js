@@ -19,7 +19,7 @@ class CityInfo extends Component {
   }
 
   async remove(id) {
-    await fetch(`/ppe_api/v1/ppedata${id}`, {
+    await fetch(`/ppe_api/v1/pperecords/${id}`, {
       method: 'DELETE',
       headers: {
         'Accept': 'application/json',
@@ -39,7 +39,7 @@ class CityInfo extends Component {
     }
 
     const CityInfo = dashboard.map(dashboard => {
-      return <tr key={dashboard.id}>
+      return <tr key={dashboard.cityName}>
         <td style={{whiteSpace: 'nowrap'}}>{dashboard.cityName}</td>
         <td>{dashboard.maskCount}</td>
         <td>{dashboard.glovesCount}</td>
@@ -48,7 +48,7 @@ class CityInfo extends Component {
         <td>
           <ButtonGroup>
             <Button size="sm" color="primary" tag={Link} to={"/employee/" + dashboard.id}>Edit</Button>
-            <Button size="sm" color="danger" onClick={() => this.remove(dashboard.id)}>Delete</Button>
+            <Button size="sm" color="danger" onClick={() => this.remove(dashboard.cityName)}>Delete</Button>
           </ButtonGroup>
         </td>
       </tr>

@@ -14,11 +14,11 @@ return(
    <h1> PersonalProtectiveEquipmemt  </h1>
    
    <ul className="navbar_link">
-       <Link style={navStyle} to='/Dashboard'>
-       <li> Citydata</li>
+       <Link style={navStyle} to='/CityInfo'>
+       <li> CityInfo</li>
        </Link>
-       <Link  style={navStyle} to='/Gloves'>
-       <li> Gloves</li>
+       <Link  style={navStyle} to='/Dashboard'>
+       <li> Dashboard</li>
        </Link>
        <Link style={navStyle} to='/Masks'>
        <li> Masks</li>

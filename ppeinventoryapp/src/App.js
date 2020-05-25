@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import './App.css';
 import Navbar from './components/Navbar.js';
 import Masks from './components/Masks';
-import Gloves from './components/Gloves';
 import Dashboard from './components/Dashboard';
+import CityInfo from './components/CityInfo';
 import { BrowserRouter as Router, Switch, Route  } from 'react-router-dom';
 import { render } from 'react-dom';
 
@@ -17,8 +17,9 @@ class App extends Component {
        
           <Navbar />
           <Switch>
-          <Route path="/Dashboard"  component={Dashboard} />  
-          <Route path="/Gloves" component={Gloves} /> 
+            
+          <Route path="/Dashboard" component={Dashboard} /> 
+          <Route path="/CityInfo"  component={CityInfo} />
           <Route path="/Masks" component={Masks} /> 
       
           </Switch>

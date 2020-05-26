@@ -21,15 +21,15 @@ class CityInfo extends Component {
       .then(data => this.setState({dashboard: data, isLoading: false}));
   }
 
-  async remove(id) {
-    await fetch(`/ppe_api/v1/pperecords/${id}`, {
+  async remove(cityName) {
+    await fetch(`/ppe_api/v1/pperecords/${cityName}`, {
       method: 'DELETE',
       headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json'
       }
     }).then(() => {
-      let updatedDashboard = [...this.state.dashboard].filter(i => i.id !== id);
+      let updatedDashboard = [...this.state.dashboard].filter(i => i.cityName !== cityName);
       this.setState({dashboard: updatedDashboard});
     });
   }

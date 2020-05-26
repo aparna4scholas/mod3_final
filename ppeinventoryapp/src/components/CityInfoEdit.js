@@ -7,10 +7,9 @@ class CityInfoEdit extends Component {
 
   emptyItem = {
     cityName: '',
-    MaskCount: '',
-    GlovesCount: '',
-    surgicalGownCount: '',
-    totalCount: ''
+    maskCount: '',
+    glovesCount: '',
+    surgicalGownCount: ''
   };
 
   constructor(props) {
@@ -45,7 +44,7 @@ class CityInfoEdit extends Component {
     '/ppe_api/v1/pperecords/';
 
     await fetch(url, {
-      method: (item.id) ? 'PUT' : 'POST',
+      method: (item.cityName) ? 'PUT' : 'POST',
       headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json'
@@ -57,6 +56,7 @@ class CityInfoEdit extends Component {
 
   render() {
     const {item} = this.state;
+    console.log('item.cityName ->'+item.cityName);
     const title = <h2>{item.cityName ? 'Edit pperecords' : 'Add pperecords'}</h2>;
 
     return <div>

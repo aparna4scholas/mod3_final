@@ -50,7 +50,7 @@ class CityInfo extends Component {
         <td>{dashboard.maskCount+dashboard.glovesCount+dashboard.surgicalGownCount}</td>
         <td>
           <ButtonGroup>
-            <Button size="sm" color="primary" tag={Link} to={"/CityInfoEdit"}>Edit</Button>
+            <Button size="sm" color="primary" tag={Link} to={"/CityInfoEdit/"+dashboard.cityName}>Edit</Button>
             <Button size="sm" color="danger" onClick={() => this.remove(dashboard.cityName)}>Delete</Button>
           </ButtonGroup>
         </td>
@@ -62,7 +62,7 @@ class CityInfo extends Component {
         
         <Container fluid>
         <div className="float-right">
-            <Button color="red" tag={Link} to="/pperecords/new">Add </Button>
+            <Button color="red" tag={Link} to="/CityInfoEdit/new">Add </Button>
           </div>
         
           <h3>All cities count</h3>

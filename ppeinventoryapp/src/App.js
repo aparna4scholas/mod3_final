@@ -21,7 +21,7 @@ class App extends Component {
           <Switch>
           <Route path="/Dashboard" component={Dashboard} /> 
           <Route path="/CityInfo"  component={CityInfo} />
-          <Route path="/CityInfoEdit" component={CityInfoEdit} /> 
+          <Route path="/CityInfoEdit/:cityName" component={CityInfoEdit} /> 
           <Route path="/Masks" component={Masks} /> 
       
           </Switch>

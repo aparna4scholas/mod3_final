@@ -42,7 +42,7 @@ class CityInfo extends Component {
     }
 
     const CityInfo = dashboard.map(dashboard => {
-      return <tr key={dashboard.cityName}>
+      return <tr key={dashboard.uid}>
         <td style={{whiteSpace: 'nowrap'}}>{dashboard.cityName}</td>
         <td>{dashboard.maskCount}</td>
         <td>{dashboard.glovesCount}</td>
@@ -61,9 +61,6 @@ class CityInfo extends Component {
       <div>
         
         <Container fluid>
-        <div className="float-right">
-            <Button color="red" tag={Link} to="/CityInfoEdit/new">Add </Button>
-          </div>
         
           <h3>All cities count</h3>
           <Table className="mt-4">

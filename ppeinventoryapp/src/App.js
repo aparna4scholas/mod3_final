@@ -22,7 +22,7 @@ class App extends Component {
           <Route path="/Dashboard" component={Dashboard} /> 
           <Route path="/CityInfo"  component={CityInfo} />
           <Route path="/CityInfoEdit/:cityName" component={CityInfoEdit} /> 
-          <Route path="/Masks" component={Masks} /> 
+          <Route path="/CityInfoEdit/new" component={CityInfoEdit} /> 
       
           </Switch>
         </div> 

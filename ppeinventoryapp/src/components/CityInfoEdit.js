@@ -9,7 +9,8 @@ class CityInfoEdit extends Component {
     cityName: '',
     maskCount: '',
     glovesCount: '',
-    surgicalGownCount: ''
+    surgicalGownCount: '',
+    uid : ''
   };
 
   constructor(props) {
@@ -40,11 +41,11 @@ class CityInfoEdit extends Component {
   async handleSubmit(event) {
     event.preventDefault();
     const {item} = this.state;
-   let url = (item.cityName) ? `/ppe_api/v1/pperecords/${item.cityName}` :
+   let url = (item.uid) ? `/ppe_api/v1/pperecords/${item.cityName}` :
     '/ppe_api/v1/pperecords/';
 
     await fetch(url, {
-      method: (item.cityName) ? 'PUT' : 'POST',
+      method: (item.uid) ? 'PUT' : 'POST',
       headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json'
@@ -57,7 +58,7 @@ class CityInfoEdit extends Component {
   render() {
     const {item} = this.state;
     console.log('item.cityName ->'+item.cityName);
-    const title = <h2>{item.cityName ? 'Edit pperecords' : 'Add pperecords'}</h2>;
+    const title = <h2>{item.uid ? 'Edit pperecords' : 'Add pperecords'}</h2>;
 
     return <div>
      

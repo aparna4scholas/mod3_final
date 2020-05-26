@@ -21,8 +21,8 @@ return(
        <Link  style={navStyle} to='/Dashboard'>
        <li> Dashboard</li>
        </Link>
-       <Link style={navStyle} to='/Masks'>
-       <li> Masks</li>
+       <Link style={navStyle} to='/CityInfoEdit/new'>
+       <li> Add City </li>
        </Link >
         </ul>
 </nav>

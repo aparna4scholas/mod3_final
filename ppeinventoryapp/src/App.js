@@ -6,20 +6,22 @@ import Dashboard from './components/Dashboard';
 import CityInfo from './components/CityInfo';
 import { BrowserRouter as Router, Switch, Route  } from 'react-router-dom';
 import { render } from 'react-dom';
+import CityInfoEdit from './components/CityInfoEdit';
 
 class App extends Component {
 
 
   render() {
     return (  
+      
      <Router>
       <div className="App">
-       
+          
           <Navbar />
           <Switch>
-            
           <Route path="/Dashboard" component={Dashboard} /> 
           <Route path="/CityInfo"  component={CityInfo} />
+          <Route path="/CityInfoEdit" component={CityInfoEdit} /> 
           <Route path="/Masks" component={Masks} /> 
       
           </Switch>
@@ -30,9 +32,5 @@ class App extends Component {
   }
 }
   
-  
-
-
-
-
 export default App;
+

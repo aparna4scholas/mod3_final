@@ -6,7 +6,10 @@ class CityInfo extends Component {
 
   constructor(props) {
     super(props);
-    this.state = {dashboard: [], isLoading: true};
+    this.state = {
+      dashboard: [], 
+      isLoading: true,
+      renderCityInfoEdit : false };
     this.remove = this.remove.bind(this);
   }
 
@@ -47,7 +50,7 @@ class CityInfo extends Component {
         <td>{dashboard.maskCount+dashboard.glovesCount+dashboard.surgicalGownCount}</td>
         <td>
           <ButtonGroup>
-            <Button size="sm" color="primary" tag={Link} to={"/pperecords/" + dashboard.id}>Edit</Button>
+            <Button size="sm" color="primary" tag={Link} to={"/CityInfoEdit"}>Edit</Button>
             <Button size="sm" color="danger" onClick={() => this.remove(dashboard.cityName)}>Delete</Button>
           </ButtonGroup>
         </td>

@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 
+
 function Navbar () {
     const navStyle = {
         color: 'crimson'
@@ -31,3 +32,4 @@ return(
 }
 
 export default Navbar;
+

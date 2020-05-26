@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import { Button, Container, Form, FormGroup, Input, Label } from 'reactstrap';
-import AppNavbar from './AppNavBar';
+
 
 class CityInfoEdit extends Component {
 
@@ -11,7 +11,6 @@ class CityInfoEdit extends Component {
     GlovesCount: '',
     surgicalGownCount: '',
     totalCount: ''
-
   };
 
   constructor(props) {
@@ -24,8 +23,8 @@ class CityInfoEdit extends Component {
   }
 
   async componentDidMount() {
-    if (this.props.match.params.id !== 'new') {
-      const group = await (await fetch(`/ppe_api/v1/pperecords/${this.props.match.params.id}`)).json();
+    if (this.props.match.params.cityName !== 'new') {
+      const group = await (await fetch(`/ppe_api/v1/pperecords/${this.props.match.params.cityName}`)).json();
       this.setState({item: group});
     }
   }
@@ -42,7 +41,7 @@ class CityInfoEdit extends Component {
   async handleSubmit(event) {
     event.preventDefault();
     const {item} = this.state;
-   let url = (item.id) ? `/ppe_api/v1/pperecords/${item.id}` :
+   let url = (item.cityName) ? `/ppe_api/v1/pperecords/${item.cityName}` :
     '/ppe_api/v1/pperecords/';
 
     await fetch(url, {
@@ -58,32 +57,37 @@ class CityInfoEdit extends Component {
 
   render() {
     const {item} = this.state;
-    const title = <h2>{item.id ? 'Edit pperecords' : 'Add pperecords'}</h2>;
+    const title = <h2>{item.cityName ? 'Edit pperecords' : 'Add pperecords'}</h2>;
 
     return <div>
-      <AppNavbar/>
+     
       <Container>
         {title}
         <Form onSubmit={this.handleSubmit}>
           <FormGroup>
-            <Label for="cityNamew">cityName </Label>
+            <Label for="cityName">cityName </Label>
             <Input type="text" name="cityName" id="citytName" value={item.cityName || ''}
                    onChange={this.handleChange} autoComplete="citytName"/>
           </FormGroup>
           <FormGroup>
-            <Label for="MaskCount">MaskCount</Label>
-            <Input type="text" name="MaskCount" id="MaskCount" value={item.MaskCount || ''}
-                   onChange={this.handleChange} autoComplete="MaskCount"/>
+            <Label for="maskCount">MaskCount</Label>
+            <Input type="text" name="maskCount" id="maskCount" value={item.maskCount || ''}
+                   onChange={this.handleChange} autoComplete="maskCount"/>
           </FormGroup>
           <FormGroup>
-            <Label for="email">Email</Label>
-            <Input type="text" name="email" id="email" value={item.email || ''}
-                   onChange={this.handleChange} autoComplete="email"/>
+            <Label for="glovesCount">GlovesCount</Label>
+            <Input type="text" name="glovesCount" id="glovesCount" value={item.glovesCount || ''}
+                   onChange={this.handleChange} autoComplete="glovesCount"/>
+          </FormGroup>
+          <FormGroup>
+            <Label for="surgicalGownCount">surgicalGownCount</Label>
+            <Input type="text" name="surgicalGownCount" id="surgicalGownCount" value={item.surgicalGownCount || ''}
+                   onChange={this.handleChange} autoComplete="surgicalGownCount"/>
           </FormGroup>
         
           <FormGroup>
             <Button color="primary" type="submit">Save</Button>{' '}
-            <Button color="secondary" tag={Link} to="/employees">Cancel</Button>
+            <Button color="secondary" tag={Link} to="/CityInfo">Cancel</Button>
           </FormGroup>
          
         </Form>
@@ -92,4 +96,4 @@ class CityInfoEdit extends Component {
   }
 }
 
-export default withRouter(EmployeeEdit);
+export default withRouter(CityInfoEdit);

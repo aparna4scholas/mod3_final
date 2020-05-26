@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 function Navbar () {
     const navStyle = {
-        color: 'crimson'
+        color: 'crimson',
     };
 
 return(
@@ -26,6 +26,7 @@ return(
 </nav>
 )
 }
+
 
 export default Navbar;
 

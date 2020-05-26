@@ -61,7 +61,7 @@ class CityInfoEdit extends Component {
   render() {
     const {item} = this.state;
     console.log('item.cityName ->'+item.cityName);
-    const title = <h2>{item.uid ? 'Edit pperecords' : 'Add pperecords'}</h2>;
+    const title = <h2>{item.uid ? 'Edit Record' : 'Add Record'}</h2>;
     const {cities} = this.state;
     let options = cities.map((data) => 
         <option key={data.cityName}>{data.cityName}</option>

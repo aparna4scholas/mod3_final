@@ -3,6 +3,7 @@
  # wireframing
  ![wireframe](./assets/../ppeinventoryapp/src/components/assets/Screen%20Shot%202020-05-26%20at%209.45.36%20AM.png)
  ![wireframe](./assets/../ppeinventoryapp/src/components/assets/Screen%20Shot%202020-05-26%20at%209.46.19%20AM.png)
+ ![wireframe](./assets/../ppeinventoryapp/src/components/assets/Screen%20Shot%202020-05-26%20at%209.46.33%20AM.png)
 
  
  # mission statemnt: 

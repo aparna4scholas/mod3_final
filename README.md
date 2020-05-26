@@ -6,7 +6,7 @@
  Technologies:
  UI: 
  Developed in ReactJs
- # Backend : 
+ Backend : 
  Developed in Spring boot with postgres database.It has 3 models 1.Inventory
  2.Displays meta data like cities to shown.
  3.

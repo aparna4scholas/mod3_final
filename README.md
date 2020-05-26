@@ -33,5 +33,5 @@
 ->GET /ppe_api/v1/citynames - Retrieves all city names
 ->POST /ppe_api/v1/citynames - Creates new city name
 ->DELETE /ppe_api/v1/citynames/{cityName} - Deletes city name
-GET /ppe_api/v1/citynames/{cityName} - Retrieves city details
+->GET /ppe_api/v1/citynames/{cityName} - Retrieves city details
 

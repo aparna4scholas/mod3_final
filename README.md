@@ -3,3 +3,11 @@
  
  # mission statemnt:
  This app is to maintain personal protection Equipment across the cities.so that we will know the status.
+ # Technologies:
+ # UI: 
+ Developed in ReactJs
+ # Backend : 
+ Developed in Spring boot with postgres database.It has 3 models 1.Inventory
+ 2.Displays meta data like cities to shown.
+ 
+

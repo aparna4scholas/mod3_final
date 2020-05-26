@@ -36,7 +36,7 @@ class CityInfo extends Component {
 
   render() {
     const {dashboard, isLoading} = this.state;
-
+    let space = ' ';
     if (isLoading) {
       return <p>Loading...</p>;
     }
@@ -49,9 +49,9 @@ class CityInfo extends Component {
         <td>{dashboard.surgicalGownCount}</td>
         <td>{dashboard.maskCount+dashboard.glovesCount+dashboard.surgicalGownCount}</td>
         <td>
-          <ButtonGroup>
-            <Button size="sm" color="primary" tag={Link} to={"/CityInfoEdit/"+dashboard.cityName}>Edit</Button>
-            <Button size="sm" color="danger" onClick={() => this.remove(dashboard.cityName)}>Delete</Button>
+          <ButtonGroup space="mr-3">
+            <Button  size="sm" color="success" tag={Link} to={"/CityInfoEdit/"+dashboard.cityName}>Edit</Button>{''} 
+            <Button  size="sm" color="danger" onClick={() => this.remove(dashboard.cityName)}>Delete</Button>
           </ButtonGroup>
         </td>
       </tr>

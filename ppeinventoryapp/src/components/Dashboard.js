@@ -28,20 +28,20 @@ class Dashboard extends Component {
 
         return (
             <div>
-                <div className="card bg-success text-white h-100">
+                <div className="card bg-success text-white h-100 hw-50">
                     <div className="card-body bg-success">
                         <h6> mask count</h6>
                         <h1>{dashboard.maskCount}</h1>
                     </div>
                 </div>
-                <div className="card bg-success text-white h-100">
-                    <div className="card-body bg-success">
+                <div className="card bg-success text-white h-100 hw-50">
+                    <div className="card-body bg-orange">
                         <h6> Gloves count</h6>
                         <h1>{dashboard.glovesCount}</h1>
                     </div>
                 </div>
-                <div className="card bg-success text-white h-100">
-                    <div className="card-body bg-success">
+                <div className="card bg-success text-white h-100 ">
+                    <div className="card-body bg-bg-navy hw-50">
                         <h6> Surgical Gown count</h6>
                         <h1>{dashboard.surgicalGownCount}</h1>
                     </div>

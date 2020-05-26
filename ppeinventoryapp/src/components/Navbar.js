@@ -9,10 +9,8 @@ function Navbar () {
     };
 
 return(
-
-  
   <nav>
-   <h1> PersonalProtectiveEquipmemt  </h1>
+   <h1> Personal Protective Equipmemt(PPE)  </h1>
    
    <ul className="navbar_link">
        <Link style={navStyle} to='/CityInfo'>

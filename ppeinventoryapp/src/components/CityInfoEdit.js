@@ -98,7 +98,7 @@ class CityInfoEdit extends Component {
         
           <FormGroup>
             <Button color="primary" type="submit">Save</Button>{' '}
-            <Button color="secondary" tag={Link} to="/CityInfo">Cancel</Button>
+            <Button color="danger" tag={Link} to="/CityInfo">Cancel</Button>
           </FormGroup>
          
         </Form>

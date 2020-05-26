@@ -23,10 +23,10 @@
 
 ->PPE Inventory:
 
-GET /ppe_api/v1/ppedata - Retrieves all
-POST /ppe_api/v1/pperecords - creates new city inventory
-PUT /ppe_api/v1/pperecords/{cityName} - updates inventory
-GET /ppe_api/v1/pperecords/{cityName} - Retrieves specific city inventory.
+->GET /ppe_api/v1/ppedata - Retrieves all
+->POST /ppe_api/v1/pperecords - creates new city inventory
+->PUT /ppe_api/v1/pperecords/{cityName} - updates inventory
+->GET /ppe_api/v1/pperecords/{cityName} - Retrieves specific city inventory.
 DELETE /ppe_api/v1/pperecords/{cityName} - Deletes city inventory
 City:
 

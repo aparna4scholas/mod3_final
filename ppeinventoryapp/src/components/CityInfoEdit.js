@@ -16,7 +16,8 @@ class CityInfoEdit extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      item: this.emptyItem
+      item: this.emptyItem,
+      cities : []
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -27,6 +28,8 @@ class CityInfoEdit extends Component {
       const group = await (await fetch(`/ppe_api/v1/pperecords/${this.props.match.params.cityName}`)).json();
       this.setState({item: group});
     }
+    const citiesdata = await (await fetch('/ppe_api/v1/citynames')).json();
+    this.setState({cities: citiesdata});
   }
 
   handleChange(event) {
@@ -59,7 +62,11 @@ class CityInfoEdit extends Component {
     const {item} = this.state;
     console.log('item.cityName ->'+item.cityName);
     const title = <h2>{item.uid ? 'Edit pperecords' : 'Add pperecords'}</h2>;
-
+    const {cities} = this.state;
+    let options = cities.map((data) => 
+        <option key={data.cityName}>{data.cityName}</option>
+    );
+    const disableInput = (item.uid) ? true : false;
     return <div>
      
       <Container>
@@ -68,7 +75,10 @@ class CityInfoEdit extends Component {
           <FormGroup>
             <Label for="cityName">cityName </Label>
             <Input type="text" name="cityName" id="citytName" value={item.cityName || ''}
-                   onChange={this.handleChange} autoComplete="citytName"/>
+                   onChange={this.handleChange} autoComplete="citytName" disabled={disableInput}/>
+             <select name="cityName" id="citytName" onChange={this.handleChange} hidden={disableInput}>
+                    {options}
+             </select>
           </FormGroup>
           <FormGroup>
             <Label for="maskCount">MaskCount</Label>
@@ -96,5 +106,4 @@ class CityInfoEdit extends Component {
     </div>
   }
 }
-
 export default withRouter(CityInfoEdit);

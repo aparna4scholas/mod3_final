@@ -5,13 +5,13 @@
  # wireframe
  ![wireframe](./ppeinventoryapp/src/components/assets/Screen%20Shot%202020-05-27%20at%2011.52.13%20PM.png)
  # project screen shots
- --> cityinfo
+
  ![wireframe](./assets/../ppeinventoryapp/src/components/assets/Screen%20Shot%202020-05-26%20at%209.45.36%20AM.png)
- -->cityinfo-->Edit
+
  ![wireframe](./assets/../ppeinventoryapp/src/components/assets/Screen%20Shot%202020-05-26%20at%209.46.19%20AM.png)
- -->Dashboard
+ 
  ![wireframe](./assets/../ppeinventoryapp/src/components/assets/Screen%20Shot%202020-05-26%20at%209.46.33%20AM.png)
- -->Add city
+
  ![wireframe](./assets/../ppeinventoryapp/src/components/assets/Screen%20Shot%202020-05-26%20at%209.46.48%20AM.png)
 
 

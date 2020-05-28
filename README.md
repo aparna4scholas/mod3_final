@@ -1,7 +1,7 @@
 # mod3_final
  [!backend Springboot application  ]--> gitrepo(link:https://github.com/aparna4scholas/mid-mod3-springboot)
  # deployment url
- (https://ppeppeinventoryap.herokuapp.com/ deployed to Heroku)
+ (https://git.heroku.com/ppeinventoryapp.git deployed to Heroku)
  # wireframe
  ![wireframe](./ppeinventoryapp/src/components/assets/Screen%20Shot%202020-05-27%20at%2011.52.13%20PM.png)
  # project screen shots
@@ -37,15 +37,14 @@
 
 ->PPE Inventory:
 
-->GET /ppe_api/v1/ppedata - Retrieves all
-->POST /ppe_api/v1/pperecords - creates new city inventory
-->PUT /ppe_api/v1/pperecords/{cityName} - updates inventory
-->GET /ppe_api/v1/pperecords/{cityName} - Retrieves specific city inventory.
-->DELETE /ppe_api/v1/pperecords/{cityName} - Deletes city inventory
-->City:
+1.GET /ppe_api/v1/ppedata - Retrieves all
+2.POST /ppe_api/v1/pperecords - creates new city inventory
+3.PUT /ppe_api/v1/pperecords/{cityName} - updates inventory
+4.GET /ppe_api/v1/pperecords/{cityName} - Retrieves specific city inventory.
+5.DELETE /ppe_api/v1/pperecords/{cityName} - Deletes city inventory
 
-->GET /ppe_api/v1/citynames - Retrieves all city names
-->POST /ppe_api/v1/citynames - Creates new city name
-->DELETE /ppe_api/v1/citynames/{cityName} - Deletes city name
-->GET /ppe_api/v1/citynames/{cityName} - Retrieves city details
+6.GET /ppe_api/v1/citynames - Retrieves all city names
+7.POST /ppe_api/v1/citynames - Creates new city name
+8.DELETE /ppe_api/v1/citynames/{cityName} - Deletes city name
+9.GET /ppe_api/v1/citynames/{cityName} - Retrieves city details
 

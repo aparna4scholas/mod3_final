@@ -1,6 +1,8 @@
 # mod3_final
  [!backend Springboot application  ]--> gitrepo(link:https://github.com/aparna4scholas/mid-mod3-springboot)
- # Wireframe
+ # wireframe
+ ![wireframe](./ppeinventoryapp/src/components/assets/Screen%20Shot%202020-05-27%20at%2011.52.13%20PM.png)
+ # project screen shots
  --> cityinfo
  ![wireframe](./assets/../ppeinventoryapp/src/components/assets/Screen%20Shot%202020-05-26%20at%209.45.36%20AM.png)
  -->cityinfo-->Edit

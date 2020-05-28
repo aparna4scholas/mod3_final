@@ -28,7 +28,7 @@
 ->How to setup
 
 ->Download source code
-->create a postgres database on the machine with ->name "ppe_db"
+->create a postgres database on the machine with name "ppe_db"
 ->Run springboot application APIs
 
 ->PPE Inventory:

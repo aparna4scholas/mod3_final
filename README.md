@@ -19,23 +19,23 @@
  # mission statemnt: 
  Personal Protection Equipment
  This project displays the available PPE inventory in each city.so that all the hospitals and government can use this data.
- -->Technologies:
- ->UI: 
- ->Developed in ReactJs
- ->Backend : 
- ->Developed in Spring boot with postgres database.It has 3 models 
- ->1.Inventory
- ->2.Displays meta data like cities to shown.
- ->3.city population data.
+ Technologies:
+  UI: 
+  Developed in ReactJs
+ Backend : 
+ Developed in Spring boot with postgres database.It has 3 models 
+ 1.Inventory
+  2.Displays meta data like cities to shown.
+ 3.city population data.
  
- -->Springboot App:
-->How to setup
+   Springboot App:
+ How to setup
 
-->Download source code
-->create a postgres database on the machine with name "ppe_db"
-->Run springboot application APIs
+ Download source code
+ create a postgres database on the machine with name "ppe_db"
+ Run springboot application APIs
 
-->PPE Inventory:
+ PPE Inventory:
 
 1.GET /ppe_api/v1/ppedata - Retrieves all
 2.POST /ppe_api/v1/pperecords - creates new city inventory

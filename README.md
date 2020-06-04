@@ -1,7 +1,7 @@
 # mod3_final
  [!backend Springboot application  ]--> gitrepo(link:https://github.com/aparna4scholas/mid-mod3-springboot)
  # deployment url
- (https://git.heroku.com/ppeinventoryapp.git deployed to Heroku)
+ (https://limitless-waters-89333.herokuapp.com/)
  # wireframe
  ![wireframe](./ppeinventoryapp/src/components/assets/Screen%20Shot%202020-05-27%20at%2011.52.13%20PM.png)
  # project screen shots
